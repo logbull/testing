@@ -13,7 +13,7 @@ wheels = [
 
 [[package]]
 name = "logbull"
-version = "0.4.0"
+version = "0.6.0"
 source = { directory = "../../libraries/python" }
 
 [package.metadata]

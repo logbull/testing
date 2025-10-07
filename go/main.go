@@ -245,7 +245,7 @@ func main() {
 	fmt.Println("Check your LogBull server for the logged messages!")
 
 	// Wait for logs to be sent
-	for i := 1; i <= 10; i++ {
+	for i := 1; i <= 5; i++ {
 		fmt.Printf("Waiting for %d seconds...\n", i)
 		time.Sleep(1 * time.Second)
 	}

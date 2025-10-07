@@ -1,0 +1,8 @@
+spring.application.name=test
+
+# LogBull Spring Boot Starter Configuration
+logbull.enabled=true
+logbull.project-id=
+logbull.host=
+logbull.api-key=your-api-key
+logbull.log-level=INFO

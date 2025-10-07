@@ -145,9 +145,13 @@ def demo_loguru_logger(logger):
 
     # Bind context for multiple logs
     bound_logger = logger.bind(request_id="req_789", session_id="sess_456")
-    bound_logger.info("[python - loguru_logger - 3] Request started", endpoint="/api/users")
     bound_logger.info(
-        "[python - loguru_logger - 3] Request completed", duration_ms=250, status_code=200
+        "[python - loguru_logger - 3] Request started", endpoint="/api/users"
+    )
+    bound_logger.info(
+        "[python - loguru_logger - 3] Request completed",
+        duration_ms=250,
+        status_code=200,
     )
 
     logger.warning(
@@ -213,7 +217,7 @@ def main():
         print("\n=== Demo Complete ===")
         print("Check your LogBull server for the logged messages!")
 
-        for i in range(10):
+        for i in range(5):
             print(f"Waiting for {i} seconds...")
             time.sleep(1)
 
