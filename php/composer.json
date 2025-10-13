@@ -1,0 +1,35 @@
+{
+  "name": "logbull/php-testing",
+  "description": "Testing suite for LogBull PHP library",
+  "type": "project",
+  "require": {
+    "php": "^8.0",
+    "logbull/logbull": "@dev",
+    "vlucas/phpdotenv": "^5.5",
+    "monolog/monolog": "^3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../../libraries/php"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "LogBullTesting\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LogBullTesting\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit --testdox"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
