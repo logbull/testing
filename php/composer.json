@@ -4,19 +4,13 @@
   "type": "project",
   "require": {
     "php": "^8.0",
-    "logbull/logbull": "@dev",
+    "logbull/logbull": "^0.2.1",
     "vlucas/phpdotenv": "^5.5",
     "monolog/monolog": "^3.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^10.0"
   },
-  "repositories": [
-    {
-      "type": "path",
-      "url": "../../libraries/php"
-    }
-  ],
   "autoload": {
     "psr-4": {
       "LogBullTesting\\": "src/"
@@ -29,7 +23,5 @@
   },
   "scripts": {
     "test": "phpunit --testdox"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  }
 }

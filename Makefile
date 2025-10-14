@@ -4,6 +4,7 @@ install:
 	cd js && npm install
 	cd php && composer install
 	cd php/laravel && composer install --ignore-platform-req=ext-fileinfo
+	cd net && dotnet restore
 
 test:
 	cd go && go run main.go
@@ -12,6 +13,7 @@ test:
 	cd java && ./gradlew test
 	cd php && php main.php
 	cd php/laravel && php artisan logbull:test
+	cd net && dotnet run
 
 test-windows:
 	cd go && go run main.go
@@ -20,4 +22,5 @@ test-windows:
 	cd java && gradlew.bat test
 	cd php && php main.php
 	cd php/laravel && php artisan logbull:test
+	cd net && dotnet run
 	
